@@ -1,5 +1,5 @@
 /*Variables*/ 
-let peso = 25;
+let peso = 0;
 let VolumenDiario = 0;
 let Mantenimiento = 0;
 let Mxm2 = 0;
