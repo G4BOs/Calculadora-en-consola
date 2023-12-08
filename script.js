@@ -28,17 +28,17 @@ CALCULAR.addEventListener('click', () => {
     MMANTENIMIENTO.style.display='block';
     
 
-    if(DATO<=10){VolumenDiario = 100*DATO ;VOLUMENDIARIO.innerHTML= VolumenDiario+"cc";
-        Mantenimiento = VolumenDiario / 24 ;Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML= Mxm2+"cc/hr";
+    if(DATO<=10){VolumenDiario = 100*DATO ;VOLUMENDIARIO.innerHTML= "Vol. Diario: "+VolumenDiario+" cc";
+        Mantenimiento = VolumenDiario / 24 ;Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML="Med. Mantenimiento: "+ Mxm2+" cc/hr";
         SCX1500.style.display='none';SCX2000.style.display='none';
-        manredo=Mantenimiento.toFixed(2);MANTENIMIENTO.innerHTML = manredo+"cc/hr";}
+        manredo=Mantenimiento.toFixed(2);MANTENIMIENTO.innerHTML = "Mantenimiento: "+ manredo+" cc/hr";}
 
-        else if(DATO<=20) {VolumenDiario = 1000+((DATO-10)*50);VOLUMENDIARIO.innerHTML=VolumenDiario+"cc";Mantenimiento = VolumenDiario / 24 ;manredo=Mantenimiento.toFixed(2); MANTENIMIENTO.innerHTML= manredo+"cc/hr";
-        Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML= Mxm2+"cc/hr";
+        else if(DATO<=20) {VolumenDiario = 1000+((DATO-10)*50);VOLUMENDIARIO.innerHTML="Vol. Diario: "+VolumenDiario+" cc";Mantenimiento = VolumenDiario / 24 ;manredo=Mantenimiento.toFixed(2); MANTENIMIENTO.innerHTML= "Mantenimiento: "+manredo+" cc/hr";
+        Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML= "Med. Mantenimiento: "+Mxm2+" cc/hr";
         SCX1500.style.display='none';SCX2000.style.display='none';}
 
-        else if(DATO<=30){VolumenDiario=1500+((DATO-20)*20);VOLUMENDIARIO.innerHTML=VolumenDiario+"cc";Mantenimiento = VolumenDiario / 24 ;manredo=Mantenimiento.toFixed(2); MANTENIMIENTO.innerHTML= manredo+"cc/hr";
-        Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML= Mxm2+"cc/hr";
+        else if(DATO<=30){VolumenDiario=1500+((DATO-20)*20);VOLUMENDIARIO.innerHTML="Vol. Diario: "+VolumenDiario+" cc";Mantenimiento = VolumenDiario / 24 ;manredo=Mantenimiento.toFixed(2); MANTENIMIENTO.innerHTML= "Mantenimiento: "+manredo+" cc/hr";
+        Mxm2 = Mantenimiento * 1.5; MMANTENIMIENTO.innerHTML="Med. Mantenimiento: "+ Mxm2+" cc/hr";
         SCX1500.style.display='none';SCX2000.style.display='none';}
 
         else if(DATO>30){SuperficieCorporal = ((DATO*4)+7)/(DATO+90);
@@ -46,7 +46,7 @@ CALCULAR.addEventListener('click', () => {
         sc1500redo=scx1500.toFixed(2);
         sc2000redo=scx2000.toFixed(2);
 
-        SCX1500.innerHTML="SC x1500: "+sc1500redo;SCX2000.innerHTML="SC x2000: "+sc2000redo;
+        SCX1500.innerHTML="SC x1500: "+sc1500redo+" cc";SCX2000.innerHTML="SC x2000: "+sc2000redo+" cc";
         
         VOLUMENDIARIO.style.display='none';
     MANTENIMIENTO.style.display='none';
