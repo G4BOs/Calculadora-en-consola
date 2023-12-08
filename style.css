@@ -19,7 +19,6 @@ border-style: dashed;
 
 
 }
-#error {color: red;}
 
 h1 {
     position: relative;
@@ -47,3 +46,8 @@ border: none;
 }
 
 button:active {scale:  0.95;}
+
+.aviso { color: red;
+display: none;}
+
+.resultado {display: none;}
