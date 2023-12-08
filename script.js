@@ -19,6 +19,8 @@ const MMANTENIMIENTO = document.getElementById('mman');
 const SCX1500 = document.getElementById('scx1500');
 const SCX2000 = document.getElementById('scx2000');
 
+
+
 CALCULAR.addEventListener('click', () => {
     const DATO = document.getElementById('peso').value;
 
