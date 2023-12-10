@@ -76,3 +76,19 @@ CALCULAR.addEventListener('click', () => {
 
 
 })
+
+const VER = document.getElementById("ver");
+const OCULTAR = document.getElementById("ocultar");
+const INFO = document.getElementById("info");
+
+VER.addEventListener("click", ()=>{
+    INFO.style.display='block';
+    VER.style.display='none';
+    OCULTAR.style.display='block';
+})
+
+OCULTAR.addEventListener('click', ()=>{
+    INFO.style.display='none';
+    VER.style.display='block';
+    OCULTAR.style.display='none';
+})
