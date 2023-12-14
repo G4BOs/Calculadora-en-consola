@@ -10,6 +10,8 @@ let manredo ;
 let sc1500redo;
 let sc2000redo;
 
+//PROBANDO 123
+
 /*Calculo*/
 const CALCULAR = document.getElementById('calcular');
 const ERROR = document.getElementById('error');
